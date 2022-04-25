@@ -15,7 +15,7 @@
 </html>
 <script type="text/javascript">
     function myFunction() {
-        var apiUrl = "http://localhost:5000/trackings?handling-unit-reference=CGMU2220003&offset=0&limit=10&desc=false";
+        var apiUrl = "https://2da8-2001-ee0-4b52-f920-5987-d2e9-75d3-5743.ap.ngrok.io/trackings?handling-unit-reference=CGMU2220003&offset=0&limit=10&desc=false";
         fetch(apiUrl).then(
             response => {
                 return response.json();

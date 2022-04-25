@@ -5,7 +5,7 @@ const app = express();
 app.get("/", (req, res) => {
   axios
     .get(
-      "http://localhost:5000/trackings?handling-unit-reference=CGMU2220003&offset=0&limit=10&desc=false"
+      "https://eb78-2001-ee0-4b52-f920-5987-d2e9-75d3-5743.ap.ngrok.io/trackings?handling-unit-reference=CGMU2220003&offset=0&limit=10&desc=false"
     )
     .then(response => {
       console.log(response.data.status);
