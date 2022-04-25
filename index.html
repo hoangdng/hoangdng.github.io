@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <a href="http://localhost:5000/trackings?handling-unit-reference=CGMU2220003&offset=0&limit=10&desc=false">Click me!</a>
+    <button onclick="myFunction">Click me!</button>
 </body>
+
 </html>
+<script type="text/javascript">
+    function myFunction() {
+        var apiUrl = "http://localhost:5000/trackings?handling-unit-reference=CGMU2220003&offset=0&limit=10&desc=false";
+        fetch(apiUrl).then(
+            response => {
+                return response.json();
+            });
+    }
+</script>
